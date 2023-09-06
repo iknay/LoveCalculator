@@ -1,0 +1,165 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./assets/heart-gif.gif");
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center; 
+}
+
+.blur {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px); 
+}
+
+.container {
+    margin-top: 32px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    align-items: center;
+    background-color: #F2749D;
+    width: 300px;
+    height: 60px;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Lilita One', cursive;
+    font-size: 24px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #F2749D;
+}
+
+.heading {
+    color: white;
+    text-shadow: 0px 4px #F2749D;
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Lilita One', cursive;
+}
+
+.heart-img {
+    width: 300px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input {
+    width: 360px;
+    padding: 16px;
+    gap: 8px;
+    border-radius: 12px;
+    border: 2px solid var(--color-light-light-3, #DFDFE6);
+    border-left: transparent;
+    background: var(--color-light-light, #FCFCFD);
+    font-family: 'Rubik', sans-serif;
+}
+
+.input-group-text {
+    border: 2px solid var(--color-light-light-3, #DFDFE6);
+    border-right: transparent;
+    background: var(--color-light-light, #FCFCFD);
+    border-radius: 12px;
+}
+
+.input-group {
+    justify-content: center;
+}
+
+.resultsText, .percentage {
+    font-family: 'Rubik', sans-serif;
+}
+
+.resultsText {
+    font-weight: bold;
+}
+
+.percentage {
+    font-size: 40px;
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+    .heart-img img {
+        width: 150px;
+    }
+
+    input {
+        width: 250px;
+       }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    .heart-img img{
+        width: 250px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        gap: 20px;
+    }
+
+    input {
+        width: 280px;
+       }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+   input {
+    width: 300px;
+    margin-top: 30px;
+   }
+
+   .input-group-text {
+    margin-top: 30px;
+   }
+
+   .heart-img {
+    margin-left: -20px;
+   }
+
+}
+
+@media (min-width: 1601px) {
+    input {
+        width: 350px;
+        margin-top: 50px;
+       }
+    
+       .input-group-text {
+        margin-top: 50px;
+       }
+}
+
+.invisible {
+    display: none;
+}
